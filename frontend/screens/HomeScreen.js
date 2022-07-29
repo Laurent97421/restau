@@ -8,7 +8,7 @@ export default function HomeScreen(props) {
 
   return (
     <ScrollView>
-        <Text h4 style={{textAlign: 'center'}}>HOMESCREEN</Text>
+        <Text h4 style={{textAlign: 'center'}}>HOMESCREENN</Text>
         <Button
         title = "Go to Results page"
         onPress={() => props.navigation.navigate('Result')}
