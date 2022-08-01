@@ -12,6 +12,10 @@ import RestoScreen from './screens/RestoScreen';
 import MyReservationScreen from './screens/histoScreen';
 import AccountScreen from './screens/AccountScreen';
 import ReservationScreen from './screens/ReservationScreen';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
+import { BottomSheetModalProvider } from '@gorhom/bottom-sheet';
+
+
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -29,13 +33,19 @@ const StackNavigatorTest = function() { // On sauvegarde une fonction StackNavig
 
 export default function App() {
   return (
-    <NavigationContainer>
-      <Tab.Navigator>
-        <Tab.Screen name="Mon compte" component={AccountScreen} />
-        <Tab.Screen name="Restaurant" component={StackNavigatorTest} />
-        <Tab.Screen name="Mes réservations" component={MyReservationScreen} />
-      </Tab.Navigator>
-    </NavigationContainer>
+    // <GestureHandlerRootView>
+
+      <BottomSheetModalProvider>
+        <NavigationContainer >
+          <Tab.Navigator>
+            <Tab.Screen name="Mon compte" component={AccountScreen} />
+            <Tab.Screen name="Restaurant" component={StackNavigatorTest} />
+            <Tab.Screen name="Mes réservations" component={MyReservationScreen} />
+          </Tab.Navigator>
+        </NavigationContainer>
+
+      </BottomSheetModalProvider>
+    // </GestureHandlerRootView> 
   );
 }
 
