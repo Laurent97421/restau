@@ -1,6 +1,7 @@
 import React, {useRef} from "react";
 import { StyleSheet, View, Text, ScrollView } from "react-native";
-import { Button } from "react-native-elements";
+import { Button } from "@rneui/themed";
+
 
 // import {BottomSheetModal} from '@gorhom/bottom-sheet';
 import BottomSheet, {BottomSheetModal} from '@gorhom/bottom-sheet';

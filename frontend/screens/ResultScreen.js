@@ -1,6 +1,6 @@
 import React from "react";
 import { StyleSheet, View, Text, ScrollView } from "react-native";
-import { Button } from "react-native-elements";
+import { Button } from "@rneui/themed";
 
 
     
