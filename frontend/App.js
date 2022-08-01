@@ -9,7 +9,7 @@ import HomeScreen from './screens/HomeScreen';
 import ResultScreen from './screens/ResultScreen';
 import RestoScreen from './screens/RestoScreen';
 
-import MyReservationScreen from './screens/histoScreen';
+import MyReservationScreen from './screens/HistoScreen';
 import AccountScreen from './screens/AccountScreen';
 import ReservationScreen from './screens/ReservationScreen';
 

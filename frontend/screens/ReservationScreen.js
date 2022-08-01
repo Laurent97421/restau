@@ -1,6 +1,6 @@
 import React from "react";
 import { StyleSheet, View, Text, ScrollView } from "react-native";
-import { Card, Badge } from "react-native-elements";
+
 
 
     
